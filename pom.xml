@@ -6,7 +6,7 @@
 	<groupId>com.rautomates.cc</groupId>
 	<artifactId>raccsb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>ra-currency-converter</name>
 	<description>Sample project by rautomates for demo</description>
