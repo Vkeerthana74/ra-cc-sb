@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat "mvn package -DskipTest"
+                bat "mvn package "
                 
             }
         }
