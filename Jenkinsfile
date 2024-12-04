@@ -2,15 +2,17 @@ pipeline {
     agent any
    
     stages {
+        stage('clone') {
+            steps {
+                echo "clone is done"
+                
+            }
+        }
         stage('Build') {
             steps {
-                sh 'mvn compile'
+                echo "Build is done"
             }
         }
-        stage('Package') {
-            steps {
-                sh 'mvn package -DskipTests'
-            }
-        }
+        
     }
 }
