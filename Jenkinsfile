@@ -2,15 +2,15 @@ pipeline {
     agent any
    
     stages {
-        stage('clone') {
+        stage('Build') {
             steps {
-                echo "clone is done"
+                bat "mvn package -DskipTest"
                 
             }
         }
-        stage('Build') {
+        stage('Deploy') {
             steps {
-                echo "Build is done"
+                echo "Deploying to tomcat"
             }
         }
         
